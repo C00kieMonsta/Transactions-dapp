@@ -31,7 +31,7 @@ contract Transactions {
     address owner;
     mapping (address => uint) clientBalance;
 
-    // constructor
+    // constructor of contract
     function Transactions(address _clientId, bytes32 _firstName, bytes32 _lastName) public {
       Client memory newClient = Client(_clientId, _firstName, _lastName);
       arrayOfClients.push(newClient);
